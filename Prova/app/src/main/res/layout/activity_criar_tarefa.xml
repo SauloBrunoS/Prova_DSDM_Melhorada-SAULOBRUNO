@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CriarTarefa">
+
+    <EditText
+        android:id="@+id/et_titulo_tarefa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Título da nova tarefa"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/et_descricao_tarefa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_descricao_tarefa"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="55dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Descrição da nova tarefa"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/btn_salvar_tarefa"
+        app:layout_constraintStart_toStartOf="@+id/et_titulo_tarefa"
+        app:layout_constraintTop_toBottomOf="@+id/et_titulo_tarefa" />
+
+    <Button
+        android:id="@+id/btn_salvar_tarefa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="273dp"
+        android:backgroundTint="#000000"
+        android:text="Salvar"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_descricao_tarefa"
+        app:layout_constraintTop_toBottomOf="@+id/et_descricao_tarefa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
